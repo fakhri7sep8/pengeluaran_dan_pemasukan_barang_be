@@ -6,8 +6,8 @@ import { User } from './auth.entity';
 import { RegisterDto, LoginDto } from './auth.dto';
 import { AuthResponse } from './auth.interface';
 import { JwtService } from '@nestjs/jwt';
-import { randomUUID } from 'crypto';
-import { MailService } from 'src/mail/mail.service';
+import { MailService } from '../mail/mail.service';
+
 
 @Injectable()
 export class AuthService {
