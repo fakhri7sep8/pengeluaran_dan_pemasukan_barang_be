@@ -17,6 +17,7 @@
     "paths": {
       "src/*": ["./src/*"]
     },
+    "strictPropertyInitialization": false,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,

@@ -12,8 +12,14 @@ async function bootstrap() {
       transform: true,
     }),
   );
-  
-  app.enableCors({ credentials: true, origin: 'http://localhost:3000' });
+
+  app.enableCors({
+    credentials: true,
+    origin: [
+      'http://localhost:3000', 
+      'https://pengeluaran-dan-pemasukan-barang-fe.vercel.app',
+    ],
+  });
   await app.listen(process.env.PORT ?? 3232);
 }
 bootstrap();
